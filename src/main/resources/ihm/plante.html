@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div th:switch="${lst}">
+<div th:case="null">
+Pas de liste
+</div>
+<div th:case="*">
+<div th:each="plante : ${lst}">
+<span th:text="${plante.idPlante}"/>
+<span th:text="${plante.nom}"/>
+<span th:text="${plante.type}"/>
+<span th:text="${plante.variete}"/>
+<span th:text="${plante.surface}"/>
+<span><a th:href="@{/ihm/plante/delete/{id}(id=${plante.id})}">X</a></span>
+<span><a th:href="@{/ihm/plante/modify/{id}(id=${plante.id})}">O</a></span>
+</div>
+</divth:case="*">
+</div>
+<a href="/ihm/plante/add">Nouvelle plante</a>
+</body>
+</html>

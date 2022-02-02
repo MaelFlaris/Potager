@@ -1,6 +1,7 @@
 package fr.eni.potager.bll;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,11 @@ public class PotagerManagerImpl implements PotagerManager {
 	@Override
 	public List<Potager> getAllPotager() {
 		return (List<Potager>) dao.findAll();
+	}
+
+	@Override
+	public Optional<Potager> getPotagerById(Integer id) {
+		return dao.findById(id);
 	}
 
 }

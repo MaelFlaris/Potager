@@ -12,6 +12,7 @@ import javax.persistence.OneToMany;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Data
@@ -25,9 +26,11 @@ public class Carre {
 	private String typeExposition;
 	
 	@OneToMany(mappedBy="carre",cascade =CascadeType.ALL )
-	private List<Plante> lstPlante = new ArrayList<>();
+	@ToString.Exclude
+	private List<Plantation> lstPlantation = new ArrayList<>();
 	
 	@OneToMany(mappedBy="carre",cascade = CascadeType.ALL)
+	@ToString.Exclude
 	private List<Action> lstAction = new ArrayList<>();
 	
 	@ManyToOne(cascade = CascadeType.ALL)

@@ -12,4 +12,5 @@ public interface ActionManager {
 	void addAction(Action action, Carre carre);
 	void addAction(Action action, Potager potager);
 	List<Action> getAllAction();
+	List<Action> getAll2WeekAction();
 }
