@@ -9,6 +9,10 @@ import org.springframework.data.repository.query.Param;
 import fr.eni.potager.bo.Plantation;
 import fr.eni.potager.bo.Plante;
 
+/**
+ * @author Maël
+ * DAL -permet de crée des methodes specifiques et non disponible dans le crudRepository 
+ */
 public interface PlanteDAO extends CrudRepository<Plante, Integer> {
 	
 	@Query("SELECT p.lstPlantation FROM Plante p WHERE p = :plante")

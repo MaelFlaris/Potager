@@ -5,6 +5,11 @@ import java.util.Optional;
 
 import fr.eni.potager.bo.Potager;
 
+/**
+ * Bll - ObjetManager - permet de définir les méthodes d'un objets
+ * @author Maël
+ *
+ */
 public interface PotagerManager {
 
 	public void addPotager(Potager potager);

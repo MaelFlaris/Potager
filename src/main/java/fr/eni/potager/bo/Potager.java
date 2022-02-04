@@ -24,10 +24,12 @@ public class Potager {
 	private Integer surface;
 	private String ville;
 	
+	//mappedBy - permet de définir la direction
 	@OneToMany(mappedBy="potager",cascade = CascadeType.ALL)
 	@ToString.Exclude
 	private List<Carre> lstCarres = new ArrayList<>();
 	
+	//mappedBy - permet de définir la direction
 	@OneToMany(mappedBy="potager",cascade = CascadeType.ALL)
 	@ToString.Exclude
 	private List<Action> lstAction = new ArrayList<>();

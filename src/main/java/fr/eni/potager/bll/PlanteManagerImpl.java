@@ -11,6 +11,11 @@ import fr.eni.potager.bo.Plantation;
 import fr.eni.potager.bo.Plante;
 import fr.eni.potager.dal.PlanteDAO;
 
+/**
+ * BLL- ObjetManagerImpl -  alimlente les méthodes de l'interface
+ * @author Maël
+ *
+ */
 @Service
 public class PlanteManagerImpl implements PlanteManager{
 

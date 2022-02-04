@@ -14,6 +14,11 @@ import fr.eni.potager.bo.Carre;
 import fr.eni.potager.bo.Potager;
 import fr.eni.potager.dal.ActionDAO;
 
+/**
+ * BLL- ObjetManagerImpl -  alimlente les méthodes de l'interface
+ * @author Maël
+ *
+ */
 @Service
 public class ActionManagerImpl implements ActionManager{
 

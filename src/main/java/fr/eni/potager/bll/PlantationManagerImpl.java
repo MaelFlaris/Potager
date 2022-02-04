@@ -6,6 +6,11 @@ import org.springframework.stereotype.Service;
 import fr.eni.potager.bo.Plantation;
 import fr.eni.potager.dal.PlantationDOA;
 
+/**
+ * BLL- ObjetManagerImpl -  alimlente les méthodes de l'interface
+ * @author Maël
+ *
+ */
 @Service
 public class PlantationManagerImpl implements PlantationManager{
 

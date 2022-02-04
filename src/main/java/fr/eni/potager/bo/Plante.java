@@ -26,6 +26,7 @@ public class Plante {
 	private String variete;
 	private Integer surface;
 	
+	//mappedBy - permet de définir la direction
 	@OneToMany(mappedBy = "plante")
 	@ToString.Exclude
 	private List<Plantation> lstPlantation = new ArrayList<>();

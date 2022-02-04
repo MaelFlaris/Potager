@@ -25,10 +25,12 @@ public class Carre {
 	private String typeSol;
 	private String typeExposition;
 	
+	//mappedBy - permet de définir la direction
 	@OneToMany(mappedBy="carre",cascade =CascadeType.ALL )
 	@ToString.Exclude
 	private List<Plantation> lstPlantation = new ArrayList<>();
 	
+	//mappedBy - permet de définir la direction
 	@OneToMany(mappedBy="carre",cascade = CascadeType.ALL)
 	@ToString.Exclude
 	private List<Action> lstAction = new ArrayList<>();

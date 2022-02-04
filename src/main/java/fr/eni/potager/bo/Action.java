@@ -23,6 +23,7 @@ public class Action {
 	private String evenement;
 	private String lieu;
 	
+	//Cascade permet de d'insere une action et un carre si celui si n'est pas déja insérer
 	@ManyToOne(cascade = CascadeType.ALL)
 	private Carre carre;
 	

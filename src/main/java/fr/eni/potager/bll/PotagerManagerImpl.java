@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import fr.eni.potager.bo.Potager;
 import fr.eni.potager.dal.PotagerDAO;
 
+/**
+ * BLL- ObjetManagerImpl -  alimlente les méthodes de l'interface
+ * @author Maël
+ *
+ */
 @Service
 public class PotagerManagerImpl implements PotagerManager {
 
@@ -32,6 +37,7 @@ public class PotagerManagerImpl implements PotagerManager {
 		return (List<Potager>) dao.findAll();
 	}
 
+	
 	@Override
 	public Optional<Potager> getPotagerById(Integer id) {
 		return dao.findById(id);

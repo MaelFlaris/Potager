@@ -9,6 +9,11 @@ import fr.eni.potager.bo.Carre;
 import fr.eni.potager.bo.Potager;
 import fr.eni.potager.dal.CarreDAO;
 
+/**
+ * BLL- ObjetManagerImpl -  alimlente les méthodes de l'interface
+ * @author Maël
+ *
+ */
 @Service
 public class CarreManagerImpl implements CarreManager{
 

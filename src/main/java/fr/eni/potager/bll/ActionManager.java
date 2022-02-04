@@ -7,6 +7,11 @@ import fr.eni.potager.bo.Carre;
 import fr.eni.potager.bo.Potager;
 
 
+/**
+ * Bll - ObjetManager - permet de définir les méthodes d'un objets
+ * @author Maël
+ *
+ */
 public interface ActionManager {
 	void deleteAction(Action action);
 	void addAction(Action action, Carre carre);
