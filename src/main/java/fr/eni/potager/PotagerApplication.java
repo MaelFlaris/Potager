@@ -1,4 +1,4 @@
-package fr.eni.potager;
+package src.main.java.fr.eni.potager;
 
 import java.time.LocalDate;
 import java.util.Date;
